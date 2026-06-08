@@ -37,17 +37,17 @@ const cardVariants = {
 };
 
 const reasons = [
-  { value: 30, suffix: "+", isCounter: true,  title: "Années d'expertise",     desc: "Distributeur Panasonic agréé depuis plus de 30 ans. Une expertise audiovisuelle professionnelle reconnue.", accent: "#D4A847" },
-  { value: 0,  suffix: "↗", isCounter: false, title: "Conseil avant achat",    desc: "Nous analysons votre salle, ses contraintes techniques et vos usages avant de proposer une solution.", accent: "#A87030" },
-  { value: 3,  suffix: "",  isCounter: true,  title: "Marques de référence",   desc: "Panasonic, ORAY et Yamaha Pro Audio — trois marques mondiales, une seule source de conseil.", accent: "#D4A847" },
-  { value: 0,  suffix: "◈", isCounter: false, title: "Matériel adapté",        desc: "Chaque salle est différente. Nous dimensionnons la solution à votre espace réel.", accent: "#A87030" },
-  { value: 0,  suffix: "✓", isCounter: false, title: "Accompagnement technique",desc: "De l'étude initiale à la mise en service, Pixel reste votre interlocuteur technique.", accent: "#D4A847" },
-  { value: 0,  suffix: "☏", isCounter: false, title: "Contact direct",         desc: "Un numéro direct, un email — pas de hotline généraliste. Une réponse rapide et personnalisée.", accent: "#A87030" },
+  { value: 30, suffix: "+", isCounter: true,  title: "Années d'expertise",     desc: "Distributeur Panasonic agréé depuis plus de 30 ans. Une expertise audiovisuelle professionnelle reconnue.", accent: "#EDE8DC" },
+  { value: 0,  suffix: "↗", isCounter: false, title: "Conseil avant achat",    desc: "Nous analysons votre salle, ses contraintes techniques et vos usages avant de proposer une solution.", accent: "#EDE8DC" },
+  { value: 3,  suffix: "",  isCounter: true,  title: "Marques de référence",   desc: "Panasonic, ORAY et Yamaha Pro Audio — trois marques mondiales, une seule source de conseil.", accent: "#EDE8DC" },
+  { value: 0,  suffix: "◈", isCounter: false, title: "Matériel adapté",        desc: "Chaque salle est différente. Nous dimensionnons la solution à votre espace réel.", accent: "#EDE8DC" },
+  { value: 0,  suffix: "✓", isCounter: false, title: "Accompagnement technique",desc: "De l'étude initiale à la mise en service, Pixel reste votre interlocuteur technique.", accent: "#EDE8DC" },
+  { value: 0,  suffix: "☏", isCounter: false, title: "Contact direct",         desc: "Un numéro direct, un email — pas de hotline généraliste. Une réponse rapide et personnalisée.", accent: "#EDE8DC" },
 ];
 
 export default function WhyPixel() {
   return (
-    <section style={{ background: "#161009", borderTop: "1px solid #2A2010" }} className="py-24">
+    <section style={{ background: "#030d38", borderTop: "1px solid #102070" }} className="py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 gap-6">
@@ -57,7 +57,7 @@ export default function WhyPixel() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.75, ease }}
           >
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#D4A847] mb-3">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-white mb-3">
               Pourquoi Pixel
             </p>
             <h2
@@ -92,7 +92,7 @@ export default function WhyPixel() {
               key={r.title}
               variants={cardVariants}
               className="relative rounded-lg p-7 overflow-hidden"
-              style={{ background: "#0C0907", border: "1px solid #2A2010" }}
+              style={{ background: "#010e4e", border: "1px solid #102070" }}
               whileHover={{ y: -4, borderColor: `${r.accent}50` }}
               transition={{ type: "spring", stiffness: 300, damping: 22 }}
             >

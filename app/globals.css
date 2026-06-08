@@ -1,16 +1,22 @@
 @import "tailwindcss";
 
-/* ─── Palette "velours & or théâtral" ─────────────────────────────────────── */
+/* ─── Palette "bleu nuit & blanc" ─────────────────────────────────────────── */
 @theme {
-  --color-pixel-dark:   #0C0907;   /* noir chaud — pas de bleu */
-  --color-pixel-dark2:  #161009;   /* anthracite chaud */
-  --color-pixel-dark3:  #1F180A;   /* brun profond */
-  --color-pixel-light:  #EDE8DC;   /* crème chaude */
-  --color-pixel-muted:  #9A9078;   /* taupe */
-  --color-pixel-gold:   #D4A847;   /* or théâtral principal */
-  --color-pixel-amber:  #A87030;   /* ambre profond */
-  --color-pixel-blue:   #5A8FC8;   /* bleu doux technique (Panasonic) */
-  --color-pixel-border: #2A2010;   /* séparateur brun */
+  --color-pixel-dark:   #010e4e;   /* bleu nuit principal — fond */
+  --color-pixel-dark2:  #030d38;   /* bleu nuit profond */
+  --color-pixel-dark3:  #051550;   /* bleu nuit carte */
+  --color-pixel-light:  #EDE8DC;   /* crème — texte principal */
+  --color-pixel-muted:  #9A9078;   /* taupe — texte secondaire */
+  --color-pixel-gold:   #010e4e;   /* bleu nuit accent */
+  --color-pixel-amber:  #010e4e;   /* bleu nuit accent */
+  --color-pixel-blue:   #5A8FC8;   /* bleu technique (Panasonic) */
+  --color-pixel-border: #1a2a8c;   /* bordure bleu nuit */
+}
+
+/* ─── Typographie — Helvetica Neue ───────────────────────────────────────── */
+:root {
+  --font-sora:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-inter: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -18,16 +24,21 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: #0C0907;
+  background-color: #010e4e;
   color: #EDE8DC;
-  font-family: var(--font-inter, system-ui, sans-serif);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: var(--font-sora, system-ui, sans-serif);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0;
+  color: #EDE8DC;
 }
 
 /* ─── Glow orbs hero ──────────────────────────────────────────────────────── */

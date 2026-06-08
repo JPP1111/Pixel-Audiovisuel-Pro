@@ -31,9 +31,9 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease }}
       style={{
-        background: scrolled ? "rgba(12,9,7,0.92)" : "transparent",
-        backdropFilter: scrolled ? "blur(14px)" : "none",
-        borderBottom: scrolled ? "1px solid #2A2010" : "1px solid transparent",
+        background: scrolled ? "rgba(0,0,0,0.45)" : "rgba(0,0,0,1)",
+        backdropFilter: scrolled ? "blur(18px)" : "none",
+        borderBottom: "1px solid transparent",
         transition: "background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease",
       }}
     >
@@ -50,7 +50,7 @@ export default function Navbar() {
             <br />
             <span
               className="text-[10px] font-medium tracking-[0.22em] uppercase"
-              style={{ color: "#D4A847" }}
+              style={{ color: "#EDE8DC" }}
             >
               Audiovisuel Pro
             </span>
@@ -67,7 +67,7 @@ export default function Navbar() {
               >
                 {link.label}
                 <span
-                  className="absolute -bottom-0.5 left-0 h-px bg-[#D4A847] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                  className="absolute -bottom-0.5 left-0 h-px bg-white origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
                   style={{ width: "100%" }}
                 />
               </Link>
@@ -77,23 +77,17 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
-          <a
-            href="tel:+33687356702"
-            className="text-sm font-medium text-[#D4A847] hover:text-[#EDE8DC] transition-colors"
-          >
-            06 87 35 67 02
-          </a>
-          <motion.div
+<motion.div
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 18 }}
           >
             <Link
               href="/contact"
-              className="text-sm font-semibold px-5 py-2.5 rounded tracking-wide"
-              style={{ background: "#D4A847", color: "#0C0907" }}
+              className="text-sm font-semibold px-5 py-2.5 rounded-full tracking-wide"
+              style={{ background: "#010e4e", color: "#EDE8DC" }}
             >
-              Demander une étude
+              Contactez-nous
             </Link>
           </motion.div>
         </div>
@@ -105,17 +99,17 @@ export default function Navbar() {
           aria-label="Menu"
         >
           <motion.span
-            className="block w-6 h-0.5 bg-[#EDE8DC] rounded"
+            className="block w-6 h-0.5 bg-[#EDE8DC] rounded-full"
             animate={{ rotate: mobileOpen ? 45 : 0, y: mobileOpen ? 8 : 0 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           />
           <motion.span
-            className="block w-6 h-0.5 bg-[#EDE8DC] rounded"
+            className="block w-6 h-0.5 bg-[#EDE8DC] rounded-full"
             animate={{ opacity: mobileOpen ? 0 : 1, scaleX: mobileOpen ? 0 : 1 }}
             transition={{ duration: 0.2 }}
           />
           <motion.span
-            className="block w-6 h-0.5 bg-[#EDE8DC] rounded"
+            className="block w-6 h-0.5 bg-[#EDE8DC] rounded-full"
             animate={{ rotate: mobileOpen ? -45 : 0, y: mobileOpen ? -8 : 0 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           />
@@ -131,7 +125,7 @@ export default function Navbar() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.35, ease }}
             className="lg:hidden overflow-hidden"
-            style={{ background: "#161009", borderTop: "1px solid #2A2010" }}
+            style={{ background: "#030d38", borderTop: "1px solid #102070" }}
           >
             <motion.div
               className="px-6 py-6 flex flex-col gap-4"
@@ -149,7 +143,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className="block text-base font-medium text-[#EDE8DC] py-2"
-                    style={{ borderBottom: "1px solid #2A2010" }}
+                    style={{ borderBottom: "1px solid #102070" }}
                     onClick={() => setMobileOpen(false)}
                   >
                     {link.label}
@@ -158,15 +152,12 @@ export default function Navbar() {
               ))}
               <Link
                 href="/contact"
-                className="mt-2 text-center text-sm font-semibold px-5 py-3 rounded"
-                style={{ background: "#D4A847", color: "#0C0907" }}
+                className="mt-2 text-center text-sm font-semibold px-5 py-3 rounded-full"
+                style={{ background: "#010e4e", color: "#EDE8DC" }}
                 onClick={() => setMobileOpen(false)}
               >
-                Demander une étude
+                Contactez-nous
               </Link>
-              <a href="tel:+33687356702" className="text-center text-sm font-medium text-[#D4A847] py-2">
-                06 87 35 67 02
-              </a>
             </motion.div>
           </motion.div>
         )}

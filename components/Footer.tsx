@@ -25,7 +25,7 @@ const brandLinks = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#0C0907", borderTop: "1px solid #2A2010" }}>
+    <footer style={{ background: "#010e4e", borderTop: "1px solid #102070" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"
@@ -40,7 +40,7 @@ export default function Footer() {
               <p className="text-2xl font-bold text-[#EDE8DC]" style={{ fontFamily: "var(--font-sora, system-ui)" }}>
                 Pixel
               </p>
-              <p className="text-xs font-medium tracking-[0.22em] uppercase" style={{ color: "#D4A847" }}>
+              <p className="text-xs font-medium tracking-[0.22em] uppercase" style={{ color: "#EDE8DC" }}>
                 Audiovisuel Pro
               </p>
             </div>
@@ -49,10 +49,10 @@ export default function Footer() {
               Distributeur Panasonic depuis plus de 30 ans.
             </p>
             <div className="flex flex-col gap-2 mt-2">
-              <a href="tel:+33687356702" className="text-sm text-[#EDE8DC] hover:text-[#D4A847] transition-colors">
+              <a href="tel:+33687356702" className="text-sm text-[#EDE8DC] hover:text-white transition-colors">
                 06 87 35 67 02
               </a>
-              <a href="mailto:contact@pixelaudiovisuelpro.fr" className="text-sm text-[#EDE8DC] hover:text-[#D4A847] transition-colors">
+              <a href="mailto:contact@pixelaudiovisuelpro.fr" className="text-sm text-[#EDE8DC] hover:text-white transition-colors">
                 contact@pixelaudiovisuelpro.fr
               </a>
             </div>
@@ -60,7 +60,7 @@ export default function Footer() {
 
           {/* Solutions */}
           <div>
-            <h4 className="text-xs font-semibold tracking-[0.18em] uppercase mb-5" style={{ color: "#D4A847" }}>
+            <h4 className="text-xs font-semibold tracking-[0.18em] uppercase mb-5" style={{ color: "#EDE8DC" }}>
               Solutions
             </h4>
             <ul className="flex flex-col gap-3">
@@ -76,7 +76,7 @@ export default function Footer() {
 
           {/* Informations */}
           <div>
-            <h4 className="text-xs font-semibold tracking-[0.18em] uppercase mb-5" style={{ color: "#D4A847" }}>
+            <h4 className="text-xs font-semibold tracking-[0.18em] uppercase mb-5" style={{ color: "#EDE8DC" }}>
               Informations
             </h4>
             <ul className="flex flex-col gap-3">
@@ -92,7 +92,7 @@ export default function Footer() {
 
           {/* Constructeurs */}
           <div>
-            <h4 className="text-xs font-semibold tracking-[0.18em] uppercase mb-5" style={{ color: "#D4A847" }}>
+            <h4 className="text-xs font-semibold tracking-[0.18em] uppercase mb-5" style={{ color: "#EDE8DC" }}>
               Sites constructeurs
             </h4>
             <ul className="flex flex-col gap-3">
@@ -116,11 +116,11 @@ export default function Footer() {
         </motion.div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4" style={{ borderTop: "1px solid #2A2010" }}>
+        <div className="mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4" style={{ borderTop: "1px solid #102070" }}>
           <p className="text-xs text-[#9A9078]">
             © {new Date().getFullYear()} Pixel Audiovisuel Pro — Distributeur Panasonic agréé
           </p>
-          <p className="text-xs" style={{ color: "#2A2010" }}>
+          <p className="text-xs" style={{ color: "#102070" }}>
             Solutions audiovisuelles professionnelles B2B
           </p>
         </div>

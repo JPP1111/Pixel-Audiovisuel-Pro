@@ -12,10 +12,10 @@ interface PageHeroProps {
 }
 
 export default function PageHero({ brand, title, subtitle, accent = "gold" }: PageHeroProps) {
-  const accentColor = accent === "gold" ? "#D4A847" : "#A87030";
+  const accentColor = accent === "gold" ? "#EDE8DC" : "#EDE8DC";
 
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden" style={{ background: "#0C0907" }}>
+    <section className="relative pt-32 pb-20 overflow-hidden" style={{ background: "#010e4e" }}>
       {/* Background glow */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] opacity-12 pointer-events-none"
@@ -37,7 +37,7 @@ export default function PageHero({ brand, title, subtitle, accent = "gold" }: Pa
           className="flex flex-col items-center"
         >
           <motion.span
-            className="inline-block text-xs font-semibold tracking-[0.22em] uppercase px-3 py-1.5 rounded border mb-6"
+            className="inline-block text-xs font-semibold tracking-[0.22em] uppercase px-3 py-1.5 rounded-full border mb-6"
             style={{ color: accentColor, borderColor: `${accentColor}40`, background: `${accentColor}08` }}
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}

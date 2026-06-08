@@ -26,7 +26,7 @@ const domains = [
 
 export default function DomainsSection() {
   return (
-    <section style={{ background: "#161009", borderTop: "1px solid #2A2010" }} className="py-20">
+    <section style={{ background: "#030d38", borderTop: "1px solid #102070" }} className="py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           className="text-center mb-12"
@@ -35,7 +35,7 @@ export default function DomainsSection() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease }}
         >
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#D4A847] mb-3">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-white mb-3">
             Domaines d&apos;intervention
           </p>
           <h2
@@ -58,10 +58,10 @@ export default function DomainsSection() {
               key={d.title}
               variants={itemVariants}
               className="flex flex-col items-center text-center p-4 rounded-lg cursor-default"
-              style={{ background: "#0C0907", border: "1px solid #2A2010" }}
+              style={{ background: "#010e4e", border: "1px solid #102070" }}
               whileHover={{
-                borderColor: "rgba(212,168,71,0.4)",
-                background: "rgba(212,168,71,0.04)",
+                borderColor: "rgba(1,14,78,0.4)",
+                background: "rgba(1,14,78,0.04)",
                 y: -3,
               }}
               transition={{ type: "spring", stiffness: 350, damping: 22 }}

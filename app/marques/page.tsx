@@ -26,7 +26,7 @@ const brands = [
     letter: "O",
     name: "ORAY",
     tagline: "Fabricant français d'écrans de projection depuis 1947",
-    accent: "#C9A86A",
+    accent: "#EDE8DC",
     href: "https://oray.fr/",
     body: [
       "ORAY est une entreprise française fondée en 1947, spécialisée dans la fabrication d'écrans de projection professionnels. Leur expertise et leur longévité sur le marché témoignent d'un savoir-faire reconnu dans les environnements exigeants.",
@@ -39,7 +39,7 @@ const brands = [
     letter: "Y",
     name: "Yamaha Pro Audio",
     tagline: "Solutions d'intégration audio professionnelle CIS",
-    accent: "#C9A86A",
+    accent: "#EDE8DC",
     href: "https://fr.yamaha.com/fr/business/audio/",
     body: [
       "Yamaha Pro Audio propose des solutions d'intégration audio professionnelle sous la gamme CIS (Commercial Installation Solutions). Des enceintes aux processeurs de signal, en passant par l'amplification et les consoles, Yamaha couvre l'ensemble de la chaîne audio professionnelle.",
@@ -60,7 +60,7 @@ export default function MarquesPage() {
         accent="gold"
       />
 
-      <section className="bg-[#0B111A] py-20">
+      <section className="bg-[#020b3c] py-20">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 flex flex-col gap-16">
           {brands.map((brand, i) => (
             <div key={brand.name} className="relative">
@@ -72,14 +72,14 @@ export default function MarquesPage() {
                 />
               )}
 
-              <div className="bg-[#151A21] border border-[#303844] rounded-lg overflow-hidden">
+              <div className="bg-[#030d38] border border-[#1a2a8c] rounded-lg overflow-hidden">
                 {/* Header bar */}
                 <div
-                  className="px-8 py-5 flex items-center gap-5 border-b border-[#303844]"
+                  className="px-8 py-5 flex items-center gap-5 border-b border-[#1a2a8c]"
                   style={{ background: `${brand.accent}08` }}
                 >
                   <div
-                    className="w-14 h-14 rounded flex items-center justify-center font-bold text-2xl border flex-shrink-0"
+                    className="w-14 h-14 rounded-full flex items-center justify-center font-bold text-2xl border flex-shrink-0"
                     style={{
                       color: brand.accent,
                       borderColor: `${brand.accent}40`,

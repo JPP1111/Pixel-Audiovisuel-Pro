@@ -14,7 +14,7 @@ export default function CTABanner({
   subtitle = "Contactez Pixel Audiovisuel Pro pour une première analyse de votre besoin. Nous vous aidons à choisir la solution réellement adaptée à votre salle.",
 }: CTABannerProps) {
   return (
-    <section style={{ background: "#161009", borderTop: "1px solid #2A2010" }}>
+    <section style={{ background: "#030d38", borderTop: "1px solid #102070" }}>
       <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -25,11 +25,11 @@ export default function CTABanner({
         >
           {/* Top ornement */}
           <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-12" style={{ background: "linear-gradient(to right, transparent, #D4A847)" }} />
-            <span className="text-xs font-semibold tracking-[0.22em] uppercase text-[#D4A847]">
+            <div className="h-px w-12" style={{ background: "linear-gradient(to right, transparent, #EDE8DC)" }} />
+            <span className="text-xs font-semibold tracking-[0.22em] uppercase text-white">
               Parlez-nous de votre projet
             </span>
-            <div className="h-px w-12" style={{ background: "linear-gradient(to left, transparent, #D4A847)" }} />
+            <div className="h-px w-12" style={{ background: "linear-gradient(to left, transparent, #EDE8DC)" }} />
           </div>
 
           <h2
@@ -45,9 +45,9 @@ export default function CTABanner({
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
               href="tel:+33687356702"
-              className="flex items-center justify-center gap-3 px-8 py-4 font-semibold rounded text-sm"
-              style={{ background: "#D4A847", color: "#0C0907", boxShadow: "0 8px 28px rgba(212,168,71,0.22)" }}
-              whileHover={{ scale: 1.04, boxShadow: "0 12px 36px rgba(212,168,71,0.38)" }}
+              className="flex items-center justify-center gap-3 px-8 py-4 font-semibold rounded-full text-sm"
+              style={{ background: "#010e4e", color: "#EDE8DC", boxShadow: "0 8px 28px rgba(1,14,78,0.22)" }}
+              whileHover={{ scale: 1.04, boxShadow: "0 12px 36px rgba(1,14,78,0.38)" }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 380, damping: 20 }}
             >
@@ -59,9 +59,9 @@ export default function CTABanner({
 
             <motion.a
               href="mailto:contact@pixelaudiovisuelpro.fr"
-              className="flex items-center justify-center gap-3 px-8 py-4 font-semibold rounded text-sm text-[#EDE8DC]"
-              style={{ border: "1px solid #2A2010" }}
-              whileHover={{ borderColor: "#D4A847", color: "#D4A847", scale: 1.02 }}
+              className="flex items-center justify-center gap-3 px-8 py-4 font-semibold rounded-full text-sm text-[#EDE8DC]"
+              style={{ border: "1px solid #102070" }}
+              whileHover={{ borderColor: "#010e4e", color: "#EDE8DC", scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 380, damping: 20 }}
             >

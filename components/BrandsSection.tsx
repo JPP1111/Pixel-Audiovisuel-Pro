@@ -20,7 +20,7 @@ const brands = [
     tagline: "Vidéoprojecteurs & Écrans professionnels",
     desc: "Gamme 4K de 3 000 à 50 000 lumens. Référence mondiale en vidéoprojection professionnelle pour les grandes salles. Pixel Audiovisuel Pro est distributeur agréé Panasonic.",
     href: "https://eu.connect.panasonic.com/fr/fr/videoprojecteurs",
-    accent: "#D4A847",
+    accent: "#EDE8DC",
     letter: "P",
   },
   {
@@ -28,7 +28,7 @@ const brands = [
     tagline: "Écrans de projection",
     desc: "Expertise française depuis 1947. Fabricant d'écrans de projection professionnels pour salles de réunion, théâtres, auditoriums et espaces de présentation.",
     href: "https://oray.fr/",
-    accent: "#A87030",
+    accent: "#EDE8DC",
     letter: "O",
   },
   {
@@ -36,14 +36,14 @@ const brands = [
     tagline: "Sonorisation professionnelle",
     desc: "Solutions d'intégration audio CIS / Commercial Installation Solutions. Enceintes, amplification, traitement audio et pilotage pour tous types d'espaces.",
     href: "https://fr.yamaha.com/fr/business/audio/",
-    accent: "#A87030",
+    accent: "#EDE8DC",
     letter: "Y",
   },
 ];
 
 export default function BrandsSection() {
   return (
-    <section style={{ background: "#0C0907", borderTop: "1px solid #2A2010" }} className="py-24">
+    <section style={{ background: "#010e4e", borderTop: "1px solid #102070" }} className="py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -53,7 +53,7 @@ export default function BrandsSection() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease }}
         >
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#D4A847] mb-3">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-white mb-3">
             Nos partenaires
           </p>
           <h2
@@ -81,7 +81,7 @@ export default function BrandsSection() {
               key={brand.name}
               variants={cardVariants}
               className="relative rounded-lg p-8 flex flex-col gap-5 overflow-hidden"
-              style={{ background: "#161009", border: "1px solid #2A2010" }}
+              style={{ background: "#030d38", border: "1px solid #102070" }}
               whileHover={{ y: -5, borderColor: `${brand.accent}50` }}
               transition={{ type: "spring", stiffness: 280, damping: 22 }}
             >
@@ -106,7 +106,7 @@ export default function BrandsSection() {
                 {/* Logo + name */}
                 <div className="flex items-center gap-4">
                   <motion.div
-                    className="w-12 h-12 rounded flex items-center justify-center font-bold text-xl border flex-shrink-0"
+                    className="w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl border flex-shrink-0"
                     style={{
                       color: brand.accent,
                       borderColor: `${brand.accent}40`,

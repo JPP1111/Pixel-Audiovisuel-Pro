@@ -19,7 +19,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-[#0B111A] overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-[#020b3c] overflow-hidden">
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] opacity-10 pointer-events-none"
           style={{
@@ -27,7 +27,7 @@ export default function ContactPage() {
           }}
         />
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A86A] mb-4">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-white mb-4">
             Parlons de votre projet
           </p>
           <h1
@@ -44,14 +44,14 @@ export default function ContactPage() {
       </section>
 
       {/* Contact cards + info */}
-      <section className="bg-[#0B111A] pb-24">
+      <section className="bg-[#020b3c] pb-24">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           {/* Contact methods */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* Phone */}
             <a
               href="tel:+33687356702"
-              className="group bg-[#151A21] border border-[#303844] hover:border-[#1E7BFF]/50 rounded-lg p-8 flex flex-col gap-5 transition-all duration-300 relative overflow-hidden"
+              className="group bg-[#030d38] border border-[#1a2a8c] hover:border-[#1E7BFF]/50 rounded-lg p-8 flex flex-col gap-5 transition-all duration-300 relative overflow-hidden"
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{ background: "radial-gradient(ellipse at top left, #1E7BFF08 0%, transparent 60%)" }}
@@ -80,13 +80,13 @@ export default function ContactPage() {
             {/* Email */}
             <a
               href="mailto:contact@pixelaudiovisuelpro.fr"
-              className="group bg-[#151A21] border border-[#303844] hover:border-[#C9A86A]/50 rounded-lg p-8 flex flex-col gap-5 transition-all duration-300 relative overflow-hidden"
+              className="group bg-[#030d38] border border-[#1a2a8c] hover:border-white/50 rounded-lg p-8 flex flex-col gap-5 transition-all duration-300 relative overflow-hidden"
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{ background: "radial-gradient(ellipse at top left, #C9A86A08 0%, transparent 60%)" }}
+                style={{ background: "radial-gradient(ellipse at top left, #010e4e08 0%, transparent 60%)" }}
               />
-              <div className="w-12 h-12 rounded-lg bg-[#C9A86A]/10 border border-[#C9A86A]/20 flex items-center justify-center">
-                <svg className="w-6 h-6 text-[#C9A86A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-12 h-12 rounded-lg bg-[#010e4e]/10 border border-[#010e4e]/20 flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                   Email
                 </p>
                 <p
-                  className="text-xl font-semibold text-white group-hover:text-[#C9A86A] transition-colors break-all"
+                  className="text-xl font-semibold text-white group-hover:text-white transition-colors break-all"
                   style={{ fontFamily: "var(--font-sora, system-ui)" }}
                 >
                   contact@pixelaudiovisuelpro.fr
@@ -108,8 +108,8 @@ export default function ContactPage() {
           </div>
 
           {/* Use cases */}
-          <div className="bg-[#151A21] border border-[#303844] rounded-lg p-8">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A86A] mb-6">
+          <div className="bg-[#030d38] border border-[#1a2a8c] rounded-lg p-8">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-white mb-6">
               Nous contacter si…
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -123,15 +123,15 @@ export default function ContactPage() {
           </div>
 
           {/* Professional pricing note */}
-          <div className="mt-8 flex items-start gap-4 p-6 bg-[#0B111A] border border-[#C9A86A]/20 rounded-lg">
-            <div className="w-8 h-8 rounded border border-[#C9A86A]/30 bg-[#C9A86A]/5 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <svg className="w-4 h-4 text-[#C9A86A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="mt-8 flex items-start gap-4 p-6 bg-[#020b3c] border border-[#010e4e]/20 rounded-lg">
+            <div className="w-8 h-8 rounded-full border border-[#010e4e]/30 bg-[#010e4e]/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <div>
               <p
-                className="text-sm font-semibold text-[#C9A86A] mb-1"
+                className="text-sm font-semibold text-white mb-1"
                 style={{ fontFamily: "var(--font-sora, system-ui)" }}
               >
                 Tarifs professionnels

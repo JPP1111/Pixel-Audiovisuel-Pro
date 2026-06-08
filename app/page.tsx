@@ -45,7 +45,7 @@ function TrustBar() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.5, ease }}
-      style={{ background: "#161009", borderBottom: "1px solid #2A2010" }}
+      style={{ background: "#030d38", borderBottom: "1px solid #102070" }}
       className="py-6"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -58,7 +58,7 @@ function TrustBar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 + i * 0.08, ease }}
             >
-              {i > 0 && <div className="w-px h-8 hidden sm:block" style={{ background: "#D4A847", opacity: 0.4 }} />}
+              {i > 0 && <div className="w-px h-8 hidden sm:block" style={{ background: "#010e4e", opacity: 0.4 }} />}
               <div>
                 <p className="text-lg font-bold text-[#EDE8DC]" style={{ fontFamily: "var(--font-sora, system-ui)" }}>
                   {"value" in item

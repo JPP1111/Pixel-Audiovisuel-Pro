@@ -45,10 +45,10 @@ export default function SonorisationPage() {
         accent="gold"
       />
 
-      <section className="bg-[#0B111A] py-20">
+      <section className="bg-[#020b3c] py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A86A] mb-3">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-white mb-3">
               Notre approche
             </p>
             <h2
@@ -74,8 +74,8 @@ export default function SonorisationPage() {
           <div className="mb-16">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {features.map((f) => (
-                <div key={f.title} className="bg-[#151A21] border border-[#303844] rounded-lg p-6">
-                  <div className="w-1 h-5 bg-[#C9A86A] rounded mb-4" />
+                <div key={f.title} className="bg-[#030d38] border border-[#1a2a8c] rounded-lg p-6">
+                  <div className="w-1 h-5 bg-white rounded-full mb-4" />
                   <h3
                     className="text-base font-semibold text-white mb-2"
                     style={{ fontFamily: "var(--font-sora, system-ui)" }}
@@ -88,7 +88,7 @@ export default function SonorisationPage() {
             </div>
           </div>
 
-          <div className="bg-[#151A21] border border-[#303844] rounded-lg p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div className="bg-[#030d38] border border-[#1a2a8c] rounded-lg p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
               <p
                 className="text-lg font-semibold text-white mb-1"
@@ -104,7 +104,7 @@ export default function SonorisationPage() {
               href="https://fr.yamaha.com/fr/business/audio/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 border border-[#C9A86A]/40 hover:bg-[#C9A86A]/10 text-[#C9A86A] font-semibold rounded text-sm transition-colors whitespace-nowrap"
+              className="flex items-center gap-2 px-6 py-3 border border-white/40 hover:bg-white/10 text-white font-semibold rounded-full text-sm transition-colors whitespace-nowrap"
             >
               Site Yamaha
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -26,7 +26,7 @@ const solutions = [
     label: "Panasonic",
     title: "Vidéoprojecteurs professionnels",
     desc: "De 3 000 à 50 000 lumens. Grandes images, forte luminosité, utilisation intensive. Pour salles de spectacle, théâtres, auditoriums.",
-    accent: "#D4A847",
+    accent: "#EDE8DC",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" stroke="currentColor" strokeWidth="1.5">
         <rect x="4" y="12" width="40" height="28" rx="2" />
@@ -41,7 +41,7 @@ const solutions = [
     label: "Panasonic",
     title: "Écrans professionnels",
     desc: "Écrans et murs d'images pour espaces d'accueil, auditoriums, régies. Conçus pour une utilisation intensive 24h/24.",
-    accent: "#D4A847",
+    accent: "#EDE8DC",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" stroke="currentColor" strokeWidth="1.5">
         <rect x="6" y="6" width="36" height="26" rx="2" />
@@ -55,7 +55,7 @@ const solutions = [
     label: "ORAY",
     title: "Écrans de projection",
     desc: "Expertise française depuis 1947. Écrans motorisés, cadres, toiles adaptées pour salles de réunion, théâtres et auditoriums.",
-    accent: "#A87030",
+    accent: "#EDE8DC",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" stroke="currentColor" strokeWidth="1.5">
         <path d="M8 8h32v28H8z" />
@@ -69,7 +69,7 @@ const solutions = [
     label: "Yamaha",
     title: "Sonorisation professionnelle",
     desc: "Diffusion sonore, enceintes, amplification et traitement audio. Solutions d'intégration CIS pour salles exigeantes.",
-    accent: "#A87030",
+    accent: "#EDE8DC",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" stroke="currentColor" strokeWidth="1.5">
         <path d="M18 8v32M30 14v20" strokeLinecap="round" />
@@ -82,7 +82,7 @@ const solutions = [
 
 export default function SolutionsGrid() {
   return (
-    <section style={{ background: "#0C0907" }} className="py-24">
+    <section style={{ background: "#010e4e" }} className="py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -92,7 +92,7 @@ export default function SolutionsGrid() {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
         >
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#D4A847] mb-3">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-white mb-3">
             Nos solutions
           </p>
           <h2
@@ -120,7 +120,7 @@ export default function SolutionsGrid() {
               <Link href={s.href} className="block h-full">
                 <motion.div
                   className="relative rounded-lg p-8 overflow-hidden h-full flex flex-col"
-                  style={{ background: "#161009", border: "1px solid #2A2010" }}
+                  style={{ background: "#030d38", border: "1px solid #102070" }}
                   whileHover={{ y: -5, borderColor: `${s.accent}60` }}
                   transition={{ type: "spring", stiffness: 300, damping: 22 }}
                 >
@@ -137,7 +137,7 @@ export default function SolutionsGrid() {
                     {/* Badge + icon */}
                     <div className="flex items-center justify-between mb-6">
                       <span
-                        className="text-xs font-semibold tracking-[0.15em] uppercase px-3 py-1 rounded border"
+                        className="text-xs font-semibold tracking-[0.15em] uppercase px-3 py-1 rounded-full border"
                         style={{ color: s.accent, borderColor: `${s.accent}35`, background: `${s.accent}08` }}
                       >
                         {s.label}
