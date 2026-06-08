@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ─── Palette "velours & or théâtral" ─────────────────────────────────────── */
+@theme {
+  --color-pixel-dark:   #0C0907;   /* noir chaud — pas de bleu */
+  --color-pixel-dark2:  #161009;   /* anthracite chaud */
+  --color-pixel-dark3:  #1F180A;   /* brun profond */
+  --color-pixel-light:  #EDE8DC;   /* crème chaude */
+  --color-pixel-muted:  #9A9078;   /* taupe */
+  --color-pixel-gold:   #D4A847;   /* or théâtral principal */
+  --color-pixel-amber:  #A87030;   /* ambre profond */
+  --color-pixel-blue:   #5A8FC8;   /* bleu doux technique (Panasonic) */
+  --color-pixel-border: #2A2010;   /* séparateur brun */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+*, *::before, *::after { box-sizing: border-box; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0C0907;
+  color: #EDE8DC;
+  font-family: var(--font-inter, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-sora, system-ui, sans-serif);
+}
+
+/* ─── Glow orbs hero ──────────────────────────────────────────────────────── */
+@keyframes hero-glow {
+  0%, 100% { opacity: 0.35; transform: scale(1) translate(0, 0); }
+  33%       { opacity: 0.55; transform: scale(1.06) translate(-22px, 14px); }
+  66%       { opacity: 0.40; transform: scale(0.97) translate(18px, -12px); }
+}
+@keyframes hero-glow2 {
+  0%, 100% { opacity: 0.25; transform: scale(1) translate(0, 0); }
+  50%       { opacity: 0.50; transform: scale(1.12) translate(24px, -18px); }
+}
+
+.hero-glow-1 { animation: hero-glow  16s ease-in-out infinite; }
+.hero-glow-2 { animation: hero-glow2 20s ease-in-out infinite; }
+
+/* ─── Scroll-indicator bounce ─────────────────────────────────────────────── */
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); opacity: 0.4; }
+  50%       { transform: translateY(6px); opacity: 0.8; }
+}
+.scroll-bounce { animation: scroll-bounce 2s ease-in-out infinite; }
