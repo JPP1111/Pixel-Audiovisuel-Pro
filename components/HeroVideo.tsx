@@ -66,21 +66,21 @@ export default function HeroVideo() {
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#EDE8DC] leading-none mb-1"
             style={{ fontFamily: "var(--font-sora, system-ui)" }}
           >
-            Équipez vos salles
+            Votre partenaire
           </motion.h1>
           <motion.h1
             variants={itemVariants}
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-none mb-1"
-            style={{ fontFamily: "var(--font-sora, system-ui)", color: "#EDE8DC" }}
+            style={{ fontFamily: "var(--font-sora, system-ui)", color: "#b69553" }}
           >
-            avec des solutions
+            Panasonic Connect
           </motion.h1>
           <motion.h1
             variants={itemVariants}
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#EDE8DC] leading-none mb-6"
             style={{ fontFamily: "var(--font-sora, system-ui)" }}
           >
-            audiovisuelles pro
+            pour les équipements audiovisuels professionnels
           </motion.h1>
 
           {/* Ornement */}
@@ -106,7 +106,7 @@ export default function HeroVideo() {
             <Link href="/contact">
               <motion.span
                 className="flex items-center justify-center gap-2 px-8 py-4 font-semibold rounded-full text-sm tracking-wide cursor-pointer"
-                style={{ background: "#010e4e", color: "#EDE8DC", boxShadow: "0 8px 32px rgba(1,14,78,0.25)" }}
+                style={{ background: "#b69553", color: "#ffffff", boxShadow: "0 8px 32px rgba(182,149,83,0.35)" }}
                 whileHover={{ scale: 1.04, boxShadow: "0 12px 40px rgba(1,14,78,0.4)" }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: "spring", stiffness: 400, damping: 20 }}
