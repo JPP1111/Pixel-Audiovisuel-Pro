@@ -19,7 +19,7 @@ const brands = [
     href: "/videoprojection?onglet=catalogue",
     internal: true,
     body: [
-      "Panasonic est le partenaire de Pixel Audiovisuel Pro pour la vidéoprojection et les écrans professionnels. Distributeur agréé depuis plus de 30 ans, nous connaissons en profondeur les gammes et pouvons vous orienter vers la solution la mieux adaptée à votre salle.",
+      "Panasonic est le partenaire de Pixel Audiovisuel Pro pour la vidéoprojection et les écrans professionnels. Revendeur agréé depuis plus de 30 ans, nous connaissons en profondeur les gammes et pouvons vous orienter vers la solution la mieux adaptée à votre salle.",
       "La gamme vidéoprojecteurs Panasonic couvre les besoins de 3 000 à 50 000 lumens, avec des technologies laser qui garantissent une longue durée de vie sans entretien régulier. Des installations légères en salle de réunion aux grandes projections en salle de spectacle, Panasonic propose une solution.",
     ],
     products: ["Vidéoprojecteurs laser 4K", "Écrans professionnels", "Murs d'images LED", "Accessoires et optiques"],

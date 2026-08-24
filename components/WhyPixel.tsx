@@ -37,7 +37,7 @@ const cardVariants = {
 };
 
 const reasons = [
-  { value: 30, suffix: "+", isCounter: true,  title: "Années d'expertise",     desc: "Distributeur Panasonic agréé depuis plus de 30 ans. Une expertise audiovisuelle professionnelle reconnue.", accent: "#EDE8DC" },
+  { value: 30, suffix: "+", isCounter: true,  title: "Années d'expertise",     desc: "Revendeur Panasonic agréé depuis plus de 30 ans. Une expertise audiovisuelle professionnelle reconnue.", accent: "#EDE8DC" },
   { value: 0,  suffix: "↗", isCounter: false, title: "Conseil avant achat",    desc: "Nous analysons votre salle, ses contraintes techniques et vos usages avant de proposer une solution.", accent: "#EDE8DC" },
   { value: 3,  suffix: "",  isCounter: true,  title: "Marques de référence",   desc: "Panasonic, ORAY et Yamaha Pro Audio — trois marques mondiales, une seule source de conseil.", accent: "#EDE8DC" },
   { value: 0,  suffix: "◈", isCounter: false, title: "Matériel adapté",        desc: "Chaque salle est différente. Nous dimensionnons la solution à votre espace réel.", accent: "#EDE8DC" },

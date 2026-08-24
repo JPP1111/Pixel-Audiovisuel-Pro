@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Pixel Audiovisuel Pro — Solutions audiovisuelles professionnelles",
   description:
-    "Distributeur Panasonic depuis 30 ans. Vidéoprojecteurs professionnels, écrans de projection ORAY, sonorisation Yamaha pour salles de spectacle, théâtres et espaces collectifs.",
+    "Revendeur Panasonic depuis 30 ans. Vidéoprojecteurs professionnels, écrans de projection ORAY, sonorisation Yamaha pour salles de spectacle, théâtres et espaces collectifs.",
 };
 
 export default function RootLayout({

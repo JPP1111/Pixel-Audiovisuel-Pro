@@ -48,7 +48,7 @@ export default function Footer() {
             </div>
             <p className="text-sm text-[#9A9078] leading-relaxed max-w-xs">
               Solutions audiovisuelles professionnelles pour salles, scènes et espaces collectifs.
-              Distributeur Panasonic depuis plus de 30 ans.
+              Revendeur Panasonic depuis plus de 30 ans.
             </p>
             <div className="flex flex-col gap-2 mt-2">
               <a href="tel:+33687356702" className="text-sm text-[#EDE8DC] hover:text-white transition-colors">
