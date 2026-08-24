@@ -73,7 +73,7 @@ export default function HeroVideo() {
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-none mb-1"
             style={{ fontFamily: "var(--font-sora, system-ui)", color: "#b69553" }}
           >
-            Panasonic Connect
+            Panasonic
           </motion.h1>
           <motion.h1
             variants={itemVariants}

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import QuoteRequestButton from "@/components/QuoteRequestButton";
 
 export const metadata: Metadata = {
   title: "Contact — Pixel Audiovisuel Pro",
@@ -12,7 +14,7 @@ const usecases = [
   "Vous cherchez un vidéoprojecteur professionnel adapté à vos contraintes",
   "Vous avez besoin d'un écran de projection ou d'un écran professionnel",
   "Vous souhaitez une installation de sonorisation professionnelle",
-  "Vous êtes collectivité, établissement culturel ou entreprise",
+  "Vous êtes une collectivité, un établissement culturel ou une entreprise",
 ];
 
 export default function ContactPage() {
@@ -27,6 +29,16 @@ export default function ContactPage() {
           }}
         />
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
+          <Link
+            href="/videoprojection"
+            className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#9A9078] hover:text-white transition-colors mb-8"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Vidéoprojecteurs professionnels
+          </Link>
+
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-white mb-4">
             Parlons de votre projet
           </p>
@@ -34,7 +46,7 @@ export default function ContactPage() {
             className="text-4xl lg:text-5xl font-semibold text-white mb-6"
             style={{ fontFamily: "var(--font-sora, system-ui)" }}
           >
-            Contactez Pixel Audiovisuel Pro
+            Contactez Pixel&nbsp;Audiovisuel&nbsp;Pro
           </h1>
           <p className="text-[#AAB2BD] text-lg leading-relaxed">
             Un conseil technique gratuit avant achat. Nous analysons votre besoin et vous orientons
@@ -78,15 +90,15 @@ export default function ContactPage() {
             </a>
 
             {/* Email */}
-            <a
-              href="mailto:contact@pixelaudiovisuelpro.fr"
-              className="group bg-[#030d38] border border-[#1a2a8c] hover:border-white/50 rounded-lg p-8 flex flex-col gap-5 transition-all duration-300 relative overflow-hidden"
+            <QuoteRequestButton
+              title="Nous contacter"
+              className="group text-left bg-[#030d38] border border-[#1a2a8c] hover:border-white/50 rounded-lg p-8 flex flex-col gap-5 transition-all duration-300 relative overflow-hidden"
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{ background: "radial-gradient(ellipse at top left, #010e4e08 0%, transparent 60%)" }}
               />
-              <div className="w-12 h-12 rounded-lg bg-[#010e4e]/10 border border-[#010e4e]/20 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-12 h-12 rounded-lg bg-[#1E7BFF]/10 border border-[#1E7BFF]/20 flex items-center justify-center">
+                <svg className="w-6 h-6 text-[#1E7BFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -104,7 +116,7 @@ export default function ContactPage() {
                   Réponse rapide — décrivez votre projet
                 </p>
               </div>
-            </a>
+            </QuoteRequestButton>
           </div>
 
           {/* Use cases */}

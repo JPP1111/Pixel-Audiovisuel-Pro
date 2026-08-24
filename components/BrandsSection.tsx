@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -19,7 +20,8 @@ const brands = [
     name: "Panasonic Connect",
     tagline: "Vidéoprojecteurs & Écrans professionnels",
     desc: "Gamme 4K de 3 000 à 50 000 lumens. Référence mondiale en vidéoprojection professionnelle pour les grandes salles. Pixel Audiovisuel Pro est distributeur agréé Panasonic.",
-    href: "https://eu.connect.panasonic.com/fr/fr/videoprojecteurs",
+    href: "/videoprojection?onglet=catalogue",
+    internal: true,
     accent: "#EDE8DC",
     letter: "P",
   },
@@ -30,6 +32,14 @@ const brands = [
     href: "https://oray.fr/",
     accent: "#EDE8DC",
     letter: "O",
+  },
+  {
+    name: "Sennheiser",
+    tagline: "Systèmes sans fil & Microphones professionnels",
+    desc: "Référence mondiale en microphones et systèmes HF professionnels depuis plus de 75 ans. Micro-cravates, microphones main, systèmes multicanaux pour scènes de spectacle et espaces de conférence.",
+    href: "https://www.sennheiser.com/fr-fr/",
+    accent: "#EDE8DC",
+    letter: "S",
   },
   {
     name: "Yamaha Pro Audio",
@@ -70,7 +80,7 @@ export default function BrandsSection() {
 
         {/* Cards */}
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -130,25 +140,45 @@ export default function BrandsSection() {
 
                 <p className="text-[#9A9078] text-sm leading-relaxed flex-1">{brand.desc}</p>
 
-                <a
-                  href={brand.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-medium transition-colors duration-200 mt-2 group/link"
-                  style={{ color: brand.accent }}
-                >
-                  Voir le site officiel
-                  <motion.svg
-                    className="w-3.5 h-3.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    whileHover={{ x: 3, y: -3 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                {(brand as { internal?: boolean }).internal ? (
+                  <Link
+                    href={brand.href}
+                    className="flex items-center gap-2 text-sm font-medium transition-colors duration-200 mt-2 group/link"
+                    style={{ color: brand.accent }}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </motion.svg>
-                </a>
+                    Voir le catalogue et les tarifs
+                    <motion.svg
+                      className="w-3.5 h-3.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      whileHover={{ x: 3 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </motion.svg>
+                  </Link>
+                ) : (
+                  <a
+                    href={brand.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-medium transition-colors duration-200 mt-2 group/link"
+                    style={{ color: brand.accent }}
+                  >
+                    Voir le site officiel
+                    <motion.svg
+                      className="w-3.5 h-3.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      whileHover={{ x: 3, y: -3 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </motion.svg>
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}

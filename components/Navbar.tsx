@@ -8,7 +8,6 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 const NAV_LINKS = [
   { href: "/videoprojection",      label: "Vidéoprojection" },
-  { href: "/ecrans-professionnels", label: "Écrans Pro" },
   { href: "/ecrans-projection",    label: "Écrans de projection" },
   { href: "/sonorisation",         label: "Sonorisation" },
   { href: "/marques",              label: "Nos marques" },

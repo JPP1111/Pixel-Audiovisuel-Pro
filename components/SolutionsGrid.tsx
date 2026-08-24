@@ -22,7 +22,7 @@ const headerVariants = {
 
 const solutions = [
   {
-    href: "/videoprojection",
+    href: "/videoprojection?onglet=catalogue",
     label: "Panasonic",
     title: "Vidéoprojecteurs professionnels",
     desc: "De 3 000 à 50 000 lumens. Grandes images, forte luminosité, utilisation intensive. Pour salles de spectacle, théâtres, auditoriums.",
@@ -37,22 +37,24 @@ const solutions = [
     ),
   },
   {
-    href: "/ecrans-professionnels",
-    label: "Panasonic",
-    title: "Écrans professionnels",
-    desc: "Écrans et murs d'images pour espaces d'accueil, auditoriums, régies. Conçus pour une utilisation intensive 24h/24.",
+    href: "/marques",
+    label: "Sennheiser",
+    title: "Systèmes sans fil",
+    desc: "Microphones et systèmes HF professionnels pour scènes de spectacle, théâtres et espaces de conférence. Fiabilité et qualité sonore.",
     accent: "#EDE8DC",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" stroke="currentColor" strokeWidth="1.5">
-        <rect x="6" y="6" width="36" height="26" rx="2" />
-        <path d="M16 36h16M24 32v4" strokeLinecap="round" />
-        <path d="M12 14h24M12 20h16" strokeLinecap="round" />
+        <path d="M24 6v24" strokeLinecap="round" />
+        <path d="M16 10a8 8 0 0016 0" strokeLinecap="round" />
+        <ellipse cx="24" cy="10" rx="5" ry="8" />
+        <path d="M12 24a12 12 0 0024 0" strokeLinecap="round" />
+        <path d="M24 36v6M18 42h12" strokeLinecap="round" />
       </svg>
     ),
   },
   {
     href: "/ecrans-projection",
-    label: "ORAY",
+    label: "Oray",
     title: "Écrans de projection",
     desc: "Expertise française depuis 1947. Écrans motorisés, cadres, toiles adaptées pour salles de réunion, théâtres et auditoriums.",
     accent: "#EDE8DC",
@@ -102,8 +104,10 @@ export default function SolutionsGrid() {
             Des équipements pour chaque besoin
           </h2>
           <p className="text-[#9A9078] max-w-2xl mx-auto">
-            Marques reconnues, conseil technique, installation et mise en service. Un interlocuteur
-            unique pour votre projet audiovisuel.
+            Marques reconnues, conseil technique, installation et mise en service.
+          </p>
+          <p className="text-[#EDE8DC] text-sm font-semibold tracking-wide mt-2">
+            Un interlocuteur unique pour votre projet audiovisuel.
           </p>
         </motion.div>
 

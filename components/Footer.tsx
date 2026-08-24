@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import QuoteRequestButton from "@/components/QuoteRequestButton";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const productLinks = [
   { href: "/videoprojection",       label: "Vidéoprojection Panasonic" },
-  { href: "/ecrans-professionnels", label: "Écrans professionnels" },
-  { href: "/ecrans-projection",     label: "Écrans de projection ORAY" },
+  { href: "/sonorisation",          label: "Systèmes sans fil Sennheiser" },
+  { href: "/ecrans-projection",     label: "Écrans de projection Oray" },
   { href: "/sonorisation",          label: "Sonorisation Yamaha" },
 ];
 
@@ -18,9 +19,10 @@ const infoLinks = [
 ];
 
 const brandLinks = [
-  { href: "https://eu.connect.panasonic.com/fr/fr/videoprojecteurs", label: "Panasonic Connect" },
-  { href: "https://oray.fr/",                                        label: "ORAY" },
+  { href: "/videoprojection?onglet=catalogue", label: "Panasonic", internal: true },
+  { href: "https://oray.fr/",                                        label: "Oray" },
   { href: "https://fr.yamaha.com/fr/business/audio/",               label: "Yamaha Pro Audio" },
+  { href: "https://www.sennheiser.com/fr-fr/",                      label: "Sennheiser" },
 ];
 
 export default function Footer() {
@@ -52,9 +54,12 @@ export default function Footer() {
               <a href="tel:+33687356702" className="text-sm text-[#EDE8DC] hover:text-white transition-colors">
                 06 87 35 67 02
               </a>
-              <a href="mailto:contact@pixelaudiovisuelpro.fr" className="text-sm text-[#EDE8DC] hover:text-white transition-colors">
+              <QuoteRequestButton
+                title="Nous contacter"
+                className="text-sm text-[#EDE8DC] hover:text-white transition-colors text-left"
+              >
                 contact@pixelaudiovisuelpro.fr
-              </a>
+              </QuoteRequestButton>
             </div>
           </div>
 
@@ -96,21 +101,35 @@ export default function Footer() {
               Sites constructeurs
             </h4>
             <ul className="flex flex-col gap-3">
-              {brandLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-[#9A9078] hover:text-[#EDE8DC] transition-colors flex items-center gap-1.5"
-                  >
-                    {link.label}
-                    <svg className="w-3 h-3 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </li>
-              ))}
+              {brandLinks.map((link) =>
+                link.internal ? (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-[#9A9078] hover:text-[#EDE8DC] transition-colors flex items-center gap-1.5"
+                    >
+                      {link.label}
+                      <svg className="w-3 h-3 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
+                  </li>
+                ) : (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-[#9A9078] hover:text-[#EDE8DC] transition-colors flex items-center gap-1.5"
+                    >
+                      {link.label}
+                      <svg className="w-3 h-3 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </motion.div>

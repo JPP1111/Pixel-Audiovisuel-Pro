@@ -3,9 +3,9 @@ import PageHero from "@/components/PageHero";
 import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
-  title: "Écrans de projection ORAY — Pixel Audiovisuel Pro",
+  title: "Écrans de projection Oray — Pixel Audiovisuel Pro",
   description:
-    "Écrans de projection ORAY : motorisés, cadres, toiles adaptées. Expertise française depuis 1947. Pour salles de réunion, théâtres et auditoriums.",
+    "Écrans de projection Oray : motorisés, cadres, toiles adaptées. Expertise française depuis 1947. Pour salles de réunion, théâtres et auditoriums.",
 };
 
 const types = [
@@ -39,9 +39,9 @@ export default function EcrансProjectionPage() {
   return (
     <>
       <PageHero
-        brand="ORAY — Écrans de projection"
+        brand="Oray — Écrans de projection"
         title="Écrans de projection professionnels"
-        subtitle="La qualité d'une projection ne dépend pas uniquement du vidéoprojecteur. L'écran joue un rôle essentiel dans le rendu final. ORAY, expertise française depuis 1947."
+        subtitle="La qualité d'une projection ne dépend pas uniquement du vidéoprojecteur. L'écran joue un rôle essentiel dans le rendu final. Oray, expertise française depuis 1947."
         accent="gold"
       />
 
@@ -59,7 +59,7 @@ export default function EcrансProjectionPage() {
             </h2>
             <div className="space-y-4 text-[#AAB2BD] leading-relaxed">
               <p>
-                Pixel Audiovisuel Pro propose des solutions ORAY pour les salles de réunion, théâtres,
+                Pixel Audiovisuel Pro propose des solutions Oray pour les salles de réunion, théâtres,
                 salles polyvalentes, auditoriums et espaces de présentation.
               </p>
               <p>
@@ -93,7 +93,7 @@ export default function EcrансProjectionPage() {
                 className="text-lg font-semibold text-white mb-1"
                 style={{ fontFamily: "var(--font-sora, system-ui)" }}
               >
-                Découvrir la gamme ORAY
+                Découvrir la gamme Oray
               </p>
               <p className="text-sm text-[#AAB2BD]">
                 Fabricant français d&apos;écrans de projection depuis 1947
@@ -105,7 +105,7 @@ export default function EcrансProjectionPage() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 border border-white/40 hover:bg-white/10 text-white font-semibold rounded-full text-sm transition-colors whitespace-nowrap"
             >
-              Site ORAY
+              Site Oray
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
@@ -116,7 +116,7 @@ export default function EcrансProjectionPage() {
 
       <CTABanner
         title="Quel écran de projection pour votre salle ?"
-        subtitle="Dimensions, type de toile, intégration, distance de projection : partagez vos contraintes et nous sélectionnons l'écran ORAY adapté à votre installation."
+        subtitle="Dimensions, type de toile, intégration, distance de projection : partagez vos contraintes et nous sélectionnons l'écran Oray adapté à votre installation."
       />
     </>
   );

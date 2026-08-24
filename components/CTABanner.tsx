@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import QuoteRequestButton from "@/components/QuoteRequestButton";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -57,19 +58,15 @@ export default function CTABanner({
               06 87 35 67 02
             </motion.a>
 
-            <motion.a
-              href="mailto:contact@pixelaudiovisuelpro.fr"
-              className="flex items-center justify-center gap-3 px-8 py-4 font-semibold rounded-full text-sm text-[#EDE8DC]"
-              style={{ border: "1px solid #102070" }}
-              whileHover={{ borderColor: "#010e4e", color: "#EDE8DC", scale: 1.02 }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ type: "spring", stiffness: 380, damping: 20 }}
+            <QuoteRequestButton
+              title="Nous contacter"
+              className="flex items-center justify-center gap-3 px-8 py-4 font-semibold rounded-full text-sm text-[#EDE8DC] border border-[#102070] hover:border-[#010e4e] transition-colors"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               Envoyer un message
-            </motion.a>
+            </QuoteRequestButton>
           </div>
 
           <p className="mt-8 text-xs text-[#9A9078]">
