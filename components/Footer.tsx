@@ -137,7 +137,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4" style={{ borderTop: "1px solid #102070" }}>
           <p className="text-xs text-[#9A9078]">
-            © {new Date().getFullYear()} Pixel Audiovisuel Pro — Distributeur Panasonic agréé
+            © {new Date().getFullYear()} Pixel Audiovisuel Pro — Revendeur Panasonic agréé
           </p>
           <p className="text-xs" style={{ color: "#102070" }}>
             Solutions audiovisuelles professionnelles B2B
