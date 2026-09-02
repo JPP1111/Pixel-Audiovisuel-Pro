@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion, animate, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -42,7 +43,7 @@ const reasons = [
   { value: 4,  suffix: "",  isCounter: true,  title: "Marques de référence",   desc: "Panasonic, ORAY, Yamaha Pro Audio et Sennheiser — quatre marques mondiales, une seule source de conseil.", accent: "#EDE8DC" },
   { value: 0,  suffix: "◈", isCounter: false, title: "Matériel adapté",        desc: "Chaque salle est différente. Nous dimensionnons la solution à votre espace réel.", accent: "#EDE8DC" },
   { value: 0,  suffix: "✓", isCounter: false, title: "Accompagnement technique",desc: "De l'étude initiale à la mise en service, Pixel reste votre interlocuteur technique.", accent: "#EDE8DC" },
-  { value: 0,  suffix: "☏", isCounter: false, title: "Contact direct",         desc: "Un numéro direct, un email — pas de hotline généraliste. Une réponse rapide et personnalisée.", accent: "#EDE8DC" },
+  { value: 0,  suffix: "☏", isCounter: false, title: "Contact direct",         desc: "Un numéro direct, un email — pas de hotline généraliste. Une réponse rapide et personnalisée.", accent: "#EDE8DC", href: "/contact" },
 ];
 
 export default function WhyPixel() {
@@ -87,43 +88,52 @@ export default function WhyPixel() {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          {reasons.map((r) => (
-            <motion.div
-              key={r.title}
-              variants={cardVariants}
-              className="relative rounded-lg p-7 overflow-hidden"
-              style={{ background: "#010e4e", border: "1px solid #102070" }}
-              whileHover={{ y: -4, borderColor: `${r.accent}50` }}
-              transition={{ type: "spring", stiffness: 300, damping: 22 }}
-            >
+          {reasons.map((r) => {
+            const card = (
               <motion.div
-                className="absolute inset-0 pointer-events-none"
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.4 }}
-                style={{ background: `radial-gradient(ellipse at top left, ${r.accent}07 0%, transparent 60%)` }}
-              />
+                variants={cardVariants}
+                className={`relative rounded-lg p-7 overflow-hidden h-full ${r.href ? "cursor-pointer" : ""}`}
+                style={{ background: "#010e4e", border: "1px solid #102070" }}
+                whileHover={{ y: -4, borderColor: `${r.accent}50` }}
+                transition={{ type: "spring", stiffness: 300, damping: 22 }}
+              >
+                <motion.div
+                  className="absolute inset-0 pointer-events-none"
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                  transition={{ duration: 0.4 }}
+                  style={{ background: `radial-gradient(ellipse at top left, ${r.accent}07 0%, transparent 60%)` }}
+                />
 
-              <div className="relative z-10">
-                <div
-                  className="text-3xl font-bold mb-4 leading-none"
-                  style={{ color: r.accent, fontFamily: "var(--font-sora, system-ui)" }}
-                >
-                  {r.isCounter
-                    ? <Counter value={r.value} suffix={r.suffix} />
-                    : r.suffix
-                  }
+                <div className="relative z-10">
+                  <div
+                    className="text-3xl font-bold mb-4 leading-none"
+                    style={{ color: r.accent, fontFamily: "var(--font-sora, system-ui)" }}
+                  >
+                    {r.isCounter
+                      ? <Counter value={r.value} suffix={r.suffix} />
+                      : r.suffix
+                    }
+                  </div>
+                  <h3
+                    className="text-base font-semibold text-[#EDE8DC] mb-2"
+                    style={{ fontFamily: "var(--font-sora, system-ui)" }}
+                  >
+                    {r.title}
+                  </h3>
+                  <p className="text-sm text-[#9A9078] leading-relaxed">{r.desc}</p>
                 </div>
-                <h3
-                  className="text-base font-semibold text-[#EDE8DC] mb-2"
-                  style={{ fontFamily: "var(--font-sora, system-ui)" }}
-                >
-                  {r.title}
-                </h3>
-                <p className="text-sm text-[#9A9078] leading-relaxed">{r.desc}</p>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+
+            return r.href ? (
+              <Link key={r.title} href={r.href} className="block">
+                {card}
+              </Link>
+            ) : (
+              <div key={r.title}>{card}</div>
+            );
+          })}
         </motion.div>
       </div>
     </section>
