@@ -139,9 +139,14 @@ export default function Footer() {
           <p className="text-xs text-[#9A9078]">
             © {new Date().getFullYear()} Pixel Audiovisuel Pro — Revendeur Panasonic agréé
           </p>
-          <p className="text-xs" style={{ color: "#102070" }}>
-            Solutions audiovisuelles professionnelles B2B
-          </p>
+          <div className="flex items-center gap-4">
+            <Link href="/mentions-legales" className="text-xs text-[#9A9078] hover:text-[#EDE8DC] transition-colors">
+              Mentions légales
+            </Link>
+            <Link href="/politique-confidentialite" className="text-xs text-[#9A9078] hover:text-[#EDE8DC] transition-colors">
+              Politique de confidentialité
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
