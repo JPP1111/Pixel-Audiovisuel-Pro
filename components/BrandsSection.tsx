@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -23,7 +24,9 @@ const brands = [
     href: "/videoprojection?onglet=catalogue",
     internal: true,
     accent: "#EDE8DC",
-    letter: "P",
+    logo: "/Images/logos/panasonic.svg",
+    logoWidth: 140,
+    logoHeight: 34,
   },
   {
     name: "ORAY",
@@ -31,15 +34,9 @@ const brands = [
     desc: "Expertise française depuis 1947. Fabricant d'écrans de projection professionnels pour salles de réunion, théâtres, auditoriums et espaces de présentation.",
     href: "https://oray.fr/",
     accent: "#EDE8DC",
-    letter: "O",
-  },
-  {
-    name: "Sennheiser",
-    tagline: "Systèmes sans fil & Microphones professionnels",
-    desc: "Référence mondiale en microphones et systèmes HF professionnels depuis plus de 75 ans. Micro-cravates, microphones main, systèmes multicanaux pour scènes de spectacle et espaces de conférence.",
-    href: "https://www.sennheiser.com/fr-fr/",
-    accent: "#EDE8DC",
-    letter: "S",
+    logo: "/Images/logos/oray.png",
+    logoWidth: 120,
+    logoHeight: 30,
   },
   {
     name: "Yamaha Pro Audio",
@@ -47,7 +44,19 @@ const brands = [
     desc: "Solutions d'intégration audio CIS / Commercial Installation Solutions. Enceintes, amplification, traitement audio et pilotage pour tous types d'espaces.",
     href: "https://fr.yamaha.com/fr/business/audio/",
     accent: "#EDE8DC",
-    letter: "Y",
+    logo: "/Images/logos/yamaha.svg",
+    logoWidth: 110,
+    logoHeight: 43,
+  },
+  {
+    name: "Sennheiser",
+    tagline: "Systèmes sans fil & Microphones professionnels",
+    desc: "Référence mondiale en microphones et systèmes HF professionnels depuis plus de 75 ans. Micro-cravates, microphones main, systèmes multicanaux pour scènes de spectacle et espaces de conférence.",
+    href: "https://www.sennheiser.com/fr-fr/",
+    accent: "#EDE8DC",
+    logo: "/Images/logos/sennheiser.svg",
+    logoWidth: 140,
+    logoHeight: 19,
   },
 ];
 
@@ -113,27 +122,22 @@ export default function BrandsSection() {
               />
 
               <div className="relative z-10 flex flex-col gap-5 flex-1">
-                {/* Logo + name */}
-                <div className="flex items-center gap-4">
+                {/* Logo */}
+                <div className="flex flex-col gap-2">
                   <motion.div
-                    className="w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl border flex-shrink-0"
-                    style={{
-                      color: brand.accent,
-                      borderColor: `${brand.accent}40`,
-                      background: `${brand.accent}10`,
-                      fontFamily: "var(--font-sora, system-ui)",
-                    }}
-                    whileHover={{ scale: 1.1, rotate: 3 }}
+                    whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 400, damping: 12 }}
                   >
-                    {brand.letter}
+                    <Image
+                      src={brand.logo}
+                      alt={brand.name}
+                      width={brand.logoWidth}
+                      height={brand.logoHeight}
+                      className="h-9 w-auto object-contain"
+                      style={{ objectPosition: "left" }}
+                    />
                   </motion.div>
-                  <div>
-                    <p className="font-semibold text-[#EDE8DC] text-base" style={{ fontFamily: "var(--font-sora, system-ui)" }}>
-                      {brand.name}
-                    </p>
-                    <p className="text-xs text-[#9A9078] mt-0.5">{brand.tagline}</p>
-                  </div>
+                  <p className="text-xs text-[#9A9078]">{brand.tagline}</p>
                 </div>
 
                 <div className="h-px w-full opacity-30" style={{ background: `linear-gradient(90deg, ${brand.accent}60, transparent)` }} />

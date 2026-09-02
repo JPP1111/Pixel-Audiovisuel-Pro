@@ -62,7 +62,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* Phone */}
             <a
-              href="tel:+33687356702"
+              href="tel:+33478431616"
               className="group bg-[#030d38] border border-[#1a2a8c] hover:border-[#1E7BFF]/50 rounded-lg p-8 flex flex-col gap-5 transition-all duration-300 relative overflow-hidden"
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
@@ -81,7 +81,7 @@ export default function ContactPage() {
                   className="text-2xl font-semibold text-white group-hover:text-[#1E7BFF] transition-colors"
                   style={{ fontFamily: "var(--font-sora, system-ui)" }}
                 >
-                  06 87 35 67 02
+                  04 78 43 16 16
                 </p>
                 <p className="text-sm text-[#AAB2BD] mt-1">
                   Appel direct — réponse personnalisée

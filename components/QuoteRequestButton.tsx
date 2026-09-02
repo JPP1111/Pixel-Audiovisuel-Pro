@@ -163,7 +163,7 @@ export default function QuoteRequestButton({
                 {status === "error" && (
                   <p className="text-xs text-center leading-relaxed" style={{ color: "#f28b82" }}>
                     L&apos;envoi a échoué. Réessayez, ou contactez-nous directement au{" "}
-                    <a href="tel:+33687356702" className="underline">06 87 35 67 02</a> ou à{" "}
+                    <a href="tel:+33478431616" className="underline">04 78 43 16 16</a> ou à{" "}
                     <a href="mailto:contact@pixelaudiovisuelpro.fr" className="underline">
                       contact@pixelaudiovisuelpro.fr
                     </a>

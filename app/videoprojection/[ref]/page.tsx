@@ -129,10 +129,10 @@ export default async function ProjectorDetailPage({ params }: PageProps) {
                 Demander un devis
               </QuoteRequestButton>
               <a
-                href="tel:+33687356702"
+                href="tel:+33478431616"
                 className="flex items-center justify-center gap-2 px-6 py-3 border border-[#1a2a8c] hover:border-[#EDE8DC]/50 text-white font-semibold rounded-full text-sm transition-colors"
               >
-                06 87 35 67 02
+                04 78 43 16 16
               </a>
             </div>
           </div>

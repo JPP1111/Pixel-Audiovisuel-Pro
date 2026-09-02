@@ -51,8 +51,8 @@ export default function Footer() {
               Revendeur Panasonic depuis plus de 30 ans.
             </p>
             <div className="flex flex-col gap-2 mt-2">
-              <a href="tel:+33687356702" className="text-sm text-[#EDE8DC] hover:text-white transition-colors">
-                06 87 35 67 02
+              <a href="tel:+33478431616" className="text-sm text-[#EDE8DC] hover:text-white transition-colors">
+                04 78 43 16 16
               </a>
               <QuoteRequestButton
                 title="Nous contacter"
