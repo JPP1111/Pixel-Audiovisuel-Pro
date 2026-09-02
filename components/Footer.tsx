@@ -8,7 +8,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 const productLinks = [
   { href: "/videoprojection",       label: "Vidéoprojection Panasonic" },
-  { href: "/sonorisation",          label: "Systèmes sans fil Sennheiser" },
+  { href: "/captation-audio",       label: "Captation audio Sennheiser" },
   { href: "/ecrans-projection",     label: "Écrans de projection Oray" },
   { href: "/sonorisation",          label: "Sonorisation Yamaha" },
 ];

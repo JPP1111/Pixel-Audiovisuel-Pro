@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/videoprojection",      label: "Vidéoprojection" },
   { href: "/ecrans-projection",    label: "Écrans de projection" },
   { href: "/sonorisation",         label: "Sonorisation" },
+  { href: "/captation-audio",      label: "Captation audio HF" },
   { href: "/marques",              label: "Nos marques" },
 ];
 

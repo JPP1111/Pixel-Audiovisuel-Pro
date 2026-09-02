@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import HeroVideo from "@/components/HeroVideo";
 import SolutionsGrid from "@/components/SolutionsGrid";
 import DomainsSection from "@/components/DomainsSection";
@@ -36,7 +34,7 @@ type TrustItem =
 
 const trustItems: TrustItem[] = [
   { value: 30, suffix: "+", label: "Années d'expertise" },
-  { text: "Panasonic · Oray · Yamaha · Sennheiser", label: "Revendeurs agréés" },
+  { text: "4 Marques de référence", label: "Revendeurs agréés" },
   { text: "B2B",            label: "Prix professionnels" },
 ];
 
@@ -82,26 +80,8 @@ export default function Home() {
     <>
       <HeroVideo />
 
-      {/* Cartes partenaires — compactes, alignées à droite comme le bouton Contactez-nous de la navbar */}
-      <div style={{ background: "#010e4e" }}>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-3">
-          <div
-            className="flex overflow-hidden"
-            style={{
-              width: "100%",
-              height: "72px",
-              borderRadius: 2,
-            }}
-          >
-          <Link href="/marques#panasonic" style={{ flex: "1 1 0%", background: "#010e4e url('/Images/etiquette_panasonic_panasonic.png') center center / contain no-repeat" }} />
-          <Link href="/marques#oray" style={{ flex: "1 1 0%", background: "#010e4e url('/Images/etiquette_panasonic_oray.png') center center / contain no-repeat" }} />
-          <Link href="/marques#yamaha-pro-audio" style={{ flex: "1 1 0%", background: "#010e4e url('/Images/etiquette_panasonic_yamaha.png') center center / contain no-repeat" }} />
-          <Link href="/marques#sennheiser" style={{ flex: "1 1 0%", background: "#010e4e url('/Images/etiquette_panasonic_sennheiser.png') center center / contain no-repeat" }} />
-          </div>
-        </div>
-      </div>
-
       <TrustBar />
+
       <SolutionsGrid />
       <DomainsSection />
       <BrandsSection />
