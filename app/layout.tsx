@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Pixel Audiovisuel Pro — Solutions audiovisuelles professionnelles",
   description:
     "Revendeur Panasonic depuis 30 ans. Vidéoprojecteurs professionnels, écrans de projection ORAY, sonorisation Yamaha pour salles de spectacle, théâtres et espaces collectifs.",
+  verification: {
+    google: "-XXmCI66CcVG-oBfbxEG5acecJGjY1Y6skMSE_cV3WI",
+  },
 };
 
 const organizationJsonLd = {
